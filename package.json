@@ -4,7 +4,7 @@
   "description": "ERROR: No README.md file found!",
   "main": "index.js",
   "scripts": {
-    "start": "beefy demo.js"
+    "start": "beefy demo.js:bundle.js"
   },
   "repository": "",
   "author": "",
