@@ -1,0 +1,20 @@
+{
+  "name": "voxel-stop-motion",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "start": "beefy demo.js"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "voxel-hello-world": "~0.3.0",
+    "browserify": "~2.11.0",
+    "beefy": "0.0.11"
+  },
+  "dependencies": {
+    "voxel-camera": "~0.1.1"
+  }
+}
