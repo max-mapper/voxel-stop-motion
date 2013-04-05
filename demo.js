@@ -6,7 +6,6 @@ require('voxel-hello-world')({
 var stopMotion = require('./')(game)
 window.stop = stopMotion
 
-stopMotion.cam.position.y = 3
-game.setBlock([0, 3, 0], 2)
+stopMotion.cam.position.y = 4
 
 

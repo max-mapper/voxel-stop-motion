@@ -20,6 +20,9 @@ function StopMotion(game, options) {
   this.cam = this.cameraControl.camera()
   game.scene.add(this.cam);
   
+  this.cameraHelper = new game.THREE.CameraHelper(this.cam)
+  game.scene.add(this.cameraHelper)
+  
   this.createEncoder()
 }
 
