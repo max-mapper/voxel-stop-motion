@@ -42,14 +42,17 @@ StopMotion.prototype.shutter = function(width, height) {
   renderer.setSize( width, height )
   this.cam.aspect = width/height
   this.cam.updateProjectionMatrix()
+  this.cameraHelper.visible = false
   
   this.cameraControl.render();
   renderer.render(this.game.scene, this.cam);
   var png = renderer.domElement.toDataURL('image/png')
+  
 
   this.cam.aspect = window.innerWidth / window.innerHeight
   this.cam.updateProjectionMatrix()
   renderer.setSize( window.innerWidth, window.innerHeight )
+  this.cameraHelper.visible = true
 
   var canvas = document.createElement('canvas')
   canvas.width = width
