@@ -44,6 +44,7 @@ StopMotion.prototype.shutter = function(width, height) {
   this.cam.updateProjectionMatrix()
   this.cameraHelper.visible = false
   
+  renderer.render(this.game.scene, game.view.camera);
   this.cameraControl.render();
   renderer.render(this.game.scene, this.cam);
   var png = renderer.domElement.toDataURL('image/png')
